@@ -11,8 +11,12 @@
         <h1>Comics</h1>
         
         <ul>
-            <li>HomePage</li>
-            <li>Catalogo dei fumetti</li>
+            <li>
+                <a href="{{ route('home') }}">Homepage</a>
+            </li>
+            <li>
+                <a href="{{ route('comics.index') }}">Catalogo dei fumetti</a>
+            </li>
         </ul>
     </header>
 
