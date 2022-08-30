@@ -17,6 +17,9 @@
             <li>
                 <a href="{{ route('comics.index') }}">Catalogo dei fumetti</a>
             </li>
+            <li>
+                <a href="{{ route('comics.create') }}">Scrivi i dati del tuo fumetto preferito</a>
+            </li>
         </ul>
     </header>
 
