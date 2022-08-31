@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>Scrivi i dati del tuo fumetto preferito</h3>
+    <h3>Modifica il fumetto</h3>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -13,7 +13,8 @@
         </div>
     @endif
 
-    <form action="{{ route('comics.store') }}" method="post">
+    <form action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="post">
+        @method('PUT')
 
         @csrf
 
